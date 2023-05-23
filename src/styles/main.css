@@ -121,12 +121,44 @@ body .kotak{
 
 .rekomendasi{
     background-color: #F6FFF8;
-    padding: 30px;
+    padding: 40px;
+}
+
+.galery{
+    padding: 40px;
+    background-color: #6B9080;
+}
+
+.rekomendasi h1, .galery h1{
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 10px;
 }
 
 .rekomendasi h1{
     color: #6B9080;
-    font-weight: bolder;
+}
+
+.galery h1{
+    color: #F6FFF8;
+}
+
+.rekomendasi .card .row .col, .galery .card .row .col{
+    align-items: center;
     text-align: center;
-    letter-spacing: 2px;
+    padding: 20px;
+}
+
+.rekomendasi .card, .galery .card{
+    align-items: center;
+}
+
+.rekomendasi .card .row .col .cardd, .galery .card .row .col .cardd{
+    background-color: #6B9080;
+    width: 310px;
+    border-radius: 20px;
+    .deskripsi{
+        padding: 5px;
+    }
 }
