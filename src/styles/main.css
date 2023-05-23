@@ -9,7 +9,7 @@ body{
     padding: 0;
 }
 
-.home{
+#home{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(../public/images/background.png);
@@ -25,7 +25,7 @@ body{
     }
 }
 
-.home .navbar img{
+#home .navbar img{
     margin: 20px;
 }
 
@@ -119,42 +119,42 @@ body .kotak{
     text-align: justify;
 }
 
-.rekomendasi{
+#rekomendasi{
     background-color: #F6FFF8;
     padding: 40px;
 }
 
-.galery{
+#galery{
     padding: 40px;
     background-color: #6B9080;
 }
 
-.rekomendasi h1, .galery h1{
+#rekomendasi h1, #galery h1{
     font-weight: bolder;
     text-align: center;
     letter-spacing: 2px;
     padding: 10px;
 }
 
-.rekomendasi h1{
+#rekomendasi h1{
     color: #6B9080;
 }
 
-.galery h1{
+#galery h1{
     color: #F6FFF8;
 }
 
-.rekomendasi .card .row .col, .galery .card .row .col{
+#rekomendasi .card .row .col, #galery .card .row .col{
     align-items: center;
     text-align: center;
     padding: 20px;
 }
 
-.rekomendasi .card, .galery .card{
+#rekomendasi .card, #galery .card{
     align-items: center;
 }
 
-.rekomendasi .card .row .col .cardd, .galery .card .row .col .cardd{
+#rekomendasi .card .row .col .cardd, #galery .card .row .col .cardd{
     background-color: #6B9080;
     width: 310px;
     border-radius: 20px;
@@ -163,23 +163,23 @@ body .kotak{
     }
 }
 
-.services{
+#services{
     background-color: #F6FFF8;
     padding: 40px;
 }
 
-.services h1, .services p{
+#services h1, #services p{
     color: #6B9080;
     text-align: center;
     letter-spacing: 1px;
 }
 
-.services .form{
+#services .form{
     background-color: #6B9080;
     padding: 20px;
 }
 
-.services .form h2{
+#services .form h2{
     color: #F6FFF8;
     padding: 10px;
 }
@@ -201,24 +201,24 @@ body .kotak{
     margin-left: 89.5%;
 }
 
-.about{
+#about{
     background-color: #6B9080;
     padding: 40px;
 }
 
-.about h1{
+#about h1{
     color: #F6FFF8;
     text-align: center;
     padding: 5px;
 }
 
-.about .card .row .col{
+#about .card .row .col{
     color: #6B9080;
     text-align: center;
     padding: 20px;
 }
 
-.about .card .row .col h4{
+#about .card .row .col h4{
     padding-top: 15px;
 }
 
@@ -226,4 +226,48 @@ body .kotak{
     border-radius: 50%;
 }
 
+.logo1{
+    background-color: #F6FFF8;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.logo1 img{
+    width: 250px;
+    height: 200px;
+}
+
+.logo1 .navbar2{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.nav2{
+    flex: 1;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.nav2 ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav2 ul li a{
+    text-decoration: none;
+    color: #6B9080;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+footer{
+    background-color: #6B9080;
+    color: #F6FFF8;
+    text-align: center;
+    height: 60px;
+    padding-top: 20px;
+}
 
