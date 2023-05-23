@@ -80,11 +80,32 @@ nav ul li a{
     color: #fff;
 }
 
-.container{
+body .kotak{
     background-color: #6B9080;
+    width: 100%;
+    padding: 30px;
 }
 
-.container .row .col img{
+.kotak .row .col img{
     align-items: center;
+}
+
+.kotak .row .col h1{
+    color:#fff;
+}
+
+.kotak .row .col h5{
+    color:#fff;
+    padding-top: 15px;
+}
+
+.rekomendasi{
+    background-color: #F6FFF8;
+    padding: 30px;
+}
+
+.rekomendasi h1{
+    color: #6B9080;
+    font-weight: bolder;
     text-align: center;
 }
