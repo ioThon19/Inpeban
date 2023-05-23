@@ -162,3 +162,68 @@ body .kotak{
         padding: 5px;
     }
 }
+
+.services{
+    background-color: #F6FFF8;
+    padding: 40px;
+}
+
+.services h1, .services p{
+    color: #6B9080;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.services .form{
+    background-color: #6B9080;
+    padding: 20px;
+}
+
+.services .form h2{
+    color: #F6FFF8;
+    padding: 10px;
+}
+
+.form-group{
+    padding: 10px;
+    .form-control{
+        background-color: #F6FFF8;
+    }
+}
+
+.btn-custom {
+    background-color: #F6FFF8;
+    color: #6B9080;
+}
+
+.submit{
+    padding: 10px;
+    margin-left: 89.5%;
+}
+
+.about{
+    background-color: #6B9080;
+    padding: 40px;
+}
+
+.about h1{
+    color: #F6FFF8;
+    text-align: center;
+    padding: 5px;
+}
+
+.about .card .row .col{
+    color: #6B9080;
+    text-align: center;
+    padding: 20px;
+}
+
+.about .card .row .col h4{
+    padding-top: 15px;
+}
+
+.profil{
+    border-radius: 50%;
+}
+
+
