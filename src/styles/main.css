@@ -72,6 +72,7 @@ nav ul li a{
     font-size: 80px;
     text-align: center;
     color: #fff;
+    letter-spacing: 2px;
 }
 
 .jumbotron p{
@@ -86,7 +87,25 @@ body .kotak{
     padding: 30px;
 }
 
+.row .col .image{
+    position: relative;
+}
+
+.row .col .image img{
+    position: absolute;
+    top: 0;
+    bottom: 52;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 .kotak .row .col img{
+    width: 380px;
+    height: 300px;
+}
+
+.kotak .row .image{
     align-items: center;
 }
 
@@ -97,6 +116,7 @@ body .kotak{
 .kotak .row .col h5{
     color:#fff;
     padding-top: 15px;
+    text-align: justify;
 }
 
 .rekomendasi{
@@ -108,4 +128,5 @@ body .kotak{
     color: #6B9080;
     font-weight: bolder;
     text-align: center;
+    letter-spacing: 2px;
 }
