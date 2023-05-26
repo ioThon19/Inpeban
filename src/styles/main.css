@@ -38,7 +38,7 @@ body .kotak{
     left: 0;
     right: 0;
     margin: auto;
-   
+
 }
 
 .kotak .row .col img{
@@ -202,6 +202,7 @@ body .kotak{
     font-size: 15px;
     font-weight: bolder;
     letter-spacing: 2px;
+    margin: 20px;
 }
 
 footer{
@@ -214,7 +215,7 @@ footer{
 
 /* batas */
 
-  
+
 
 .kotak {
   background-color: #f2f2f2;
@@ -251,7 +252,7 @@ h5 {
   .image {
     margin-top: 0;
   }
-} 
+}
 
 /* batas */
 
@@ -269,7 +270,7 @@ ul{
     list-style: none;
 }
 header {
-    
+
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(../public/images/background.png);
@@ -281,7 +282,7 @@ header {
 
 }
 .header-content{
-    margin-bottom: 150px;
+    margin-bottom: 200px;
     color: whitesmoke;
     text-align: center;
 }
@@ -340,7 +341,7 @@ header {
 }
 .nav-links li{
     margin: 0 30px;
-    
+
 }
 
 /* mobile */
@@ -376,4 +377,4 @@ header {
     .nav-links li{
         margin: 30px auto;
     }
-  } 
+  }
