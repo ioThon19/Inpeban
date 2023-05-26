@@ -9,37 +9,7 @@ body{
     padding: 0;
 }
 
-#home{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(../public/images/background.png);
-    background-position: center;
-    background-size: cover;
-    padding-left: 3%;
-    padding-right: 3%;
-    box-sizing: border-box;
-    .navbar{
-        height: 12%;
-        display: flex;
-        align-items: center;
-    }
-}
 
-#home .navbar img{
-    margin: 20px;
-}
-
-nav{
-    flex: 1;
-    text-align: right;
-    padding-right: 8%;
-}
-
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 60px;
-}
 
 nav ul li a{
     text-decoration: none;
@@ -47,38 +17,6 @@ nav ul li a{
     font-size: 15px;
     font-weight: bolder;
     letter-spacing: 2px;
-}
-
-.navbar p a{
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: bolder;
-    color: white;
-    text-align: center;
-}
-
-.navbar p{
-    background-color: #6B9080;
-    border-radius: 20px;
-    width: 90px;
-    height: 30px;
-    text-align: center;
-    padding-top: 3px;
-}
-
-.jumbotron h1{
-    padding-top: 150px;
-    font-weight: bolder;
-    font-size: 80px;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 2px;
-}
-
-.jumbotron p{
-    text-align: center;
-    margin-top: 50px;
-    color: #fff;
 }
 
 body .kotak{
@@ -89,6 +27,8 @@ body .kotak{
 
 .row .col .image{
     position: relative;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .row .col .image img{
@@ -98,6 +38,7 @@ body .kotak{
     left: 0;
     right: 0;
     margin: auto;
+   
 }
 
 .kotak .row .col img{
@@ -198,7 +139,7 @@ body .kotak{
 
 .submit{
     padding: 10px;
-    margin-left: 89.5%;
+    margin-left: 87.5%;
 }
 
 #about{
@@ -271,3 +212,168 @@ footer{
     padding-top: 20px;
 }
 
+/* batas */
+
+  
+
+.kotak {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  color: white;
+  padding-bottom: 20px;
+}
+
+h5 {
+  font-size: 18px;
+  color: #e7e7e7;
+  text-align: justify;
+}
+
+.image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-6 {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .image {
+    margin-top: 0;
+  }
+} 
+
+/* batas */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+header {
+    
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(../public/images/background.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+.line{
+    width: 300px;
+    height: 4px;
+    background: #6B9080;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn {
+    padding: 8px 15px;
+    background: #6B9080;
+    border-radius: 30px;
+    color: #e7e7e7;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* navbar */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.logo{
+    padding-left: 10%;
+    padding-top: 20px ;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    padding-right: 8%;
+    padding-top: 20px;
+
+}
+.nav-links li{
+    margin: 0 30px;
+    
+}
+
+/* mobile */
+@media (max-width: 850px) {
+    .menu-btn{
+        display: block;
+        padding-top: 20px;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        padding-left: 20px;
+
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 75%;
+        height: 70vh;
+        justify-content: center;
+        background:rgb(149, 156, 155);
+        margin-top: -1000px;
+        transition: all 0.5s ease;
+
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 10%;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+  } 
