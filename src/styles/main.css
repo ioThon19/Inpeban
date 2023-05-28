@@ -81,6 +81,10 @@ body .kotak{
     color: #6B9080;
 }
 
+.card .deskripsi p a{
+    color: black;
+}
+
 #galery h1{
     color: #F6FFF8;
 }
@@ -377,4 +381,95 @@ header {
     .nav-links li{
         margin: 30px auto;
     }
-  }
+}
+
+.container-login, .container-daftar{
+    background-color: #F6FFF8;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.kotak-login, .kotak-daftar{
+    height: 75%;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: #EAF4F4;
+    border-radius: 30px;
+}
+
+.kotak-login h1, .kotak-daftar h1{
+    color: #6B9080;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding: 30px;
+}
+
+.button-login, .button-daftar{
+    background-color: #6B9080;
+    width: 80%;
+}
+
+.input-login, .input-daftar{
+    background-color: #CCE3DE;
+    width: 80%;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.kotak-login form p, .kotak-daftar form p{
+    padding: 10px;;
+}
+
+.kotak-login form p a, .kotak-daftar form p a{
+    text-decoration: none;
+    color: #6B9080;
+    font-weight: bolder;
+}
+
+.container-detail{
+    background-color: #F6FFF8;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+}
+
+.container-detail .h1detail{
+    font-weight: bolder;
+    color: #6B9080;
+    padding: 30px;
+}
+
+.container-detail .row .deskripsi-detail{
+    text-align: left;
+    padding: 40px;
+}
+
+.deskripsi-detail h5, .deskripsi-detail h1{
+    color: #6B9080;
+}
+
+.deskripsi-detail h4{
+    width: 65%;
+    background-color: #CCE3DE;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.deskripsi-img{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
