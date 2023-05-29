@@ -81,7 +81,7 @@ body .kotak{
     color: #6B9080;
 }
 
-.card .deskripsi p a{
+.cardcard .deskripsi p a, .cardcard2 .deskripsi p a{
     color: black;
 }
 
@@ -89,7 +89,46 @@ body .kotak{
     color: #F6FFF8;
 }
 
-#rekomendasi .card .row .col, #galery .card .row .col{
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.cardcard {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #6B9080;
+    border-radius: 20px;
+
+    .deskripsi {
+        padding: 5px;
+    }
+}
+
+.cardcard2 {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #CCE3DE;
+    border-radius: 20px;
+
+    .deskripsi {
+        padding: 5px;
+    }
+}
+
+.cardcard img,
+.cardcard2 img {
+    height: 250px;
+    width: 300px;
+}
+
+/* #rekomendasi .card .row .col, #galery .card .row .col{
     align-items: center;
     text-align: center;
     padding: 20px;
@@ -106,7 +145,7 @@ body .kotak{
     .deskripsi{
         padding: 5px;
     }
-}
+} */
 
 #services{
     background-color: #F6FFF8;
@@ -493,7 +532,7 @@ header {
     padding-left: 6%;
     padding-top: 2px ;
     padding-bottom: 7px;
-    
+
 }
 .fas{
     padding-right: 20px;
@@ -509,8 +548,8 @@ header {
 
 #row{
     margin-top: 4%;
-   
-   
+
+
 }
 .col-md-2{
     background-color: #CCE3DE;
@@ -526,7 +565,7 @@ header {
 
 .nav-link{
     color: #6B9080;
-    
+
 }
 .nav-link a :hover{
     color: #CCE3DE;
@@ -559,7 +598,7 @@ header {
     padding-bottom: 25px;
     border-top: 10px solid #6B9080;
     border-right: 10px solid #6B9080;
-   
+
 }
 .card{
     margin-left: 20px;
@@ -578,4 +617,4 @@ header {
     color: #F6FFF8;
     text-align: center;
 }
-   
+
