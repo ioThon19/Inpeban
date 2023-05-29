@@ -322,7 +322,7 @@ header {
     display: none;
 }
 /* navbar */
-.navbar{
+.navbar3{
     position: absolute;
     top: 0;
     left: 0;
@@ -354,7 +354,7 @@ header {
         display: block;
         padding-top: 20px;
     }
-    .navbar{
+    .navbar3{
         padding: 0;
     }
     .logo{
@@ -473,3 +473,109 @@ header {
     justify-content: center;
     margin: 40px;
 }
+
+/* batas */
+.navbar{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    background-color: #F6FFF8;
+}
+
+.container-fluid h1{
+    color: #085c4a;
+    font-size: 32px;
+    padding-top: 3px;
+    padding-right: 62%;
+    padding-bottom: 2px;
+}
+.logo1{
+    padding-left: 6%;
+    padding-top: 2px ;
+    padding-bottom: 7px;
+    
+}
+.fas{
+    padding-right: 20px;
+    color: #6B9080;
+}
+.far{
+    padding-right: 20px;
+    color: #6B9080;
+}
+.container-fluid{
+   padding-bottom: 2px;
+}
+
+#row{
+    margin-top: 4%;
+   
+   
+}
+.col-md-2{
+    background-color: #CCE3DE;
+    margin-top: 2px;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+}
+
+.nav{
+    margin-left: 20px;
+}
+
+.nav-link{
+    color: #6B9080;
+    
+}
+.nav-link a :hover{
+    color: #CCE3DE;
+}
+.fas{
+    padding-right: 20px;
+    color: #6B9080;
+}
+.far{
+    padding-right: 20px;
+    color: #6B9080;
+}
+.col-md-10{
+    background-color: rgb(221, 239, 237);
+    padding: 30px;
+    padding-top: 40px;
+    padding-bottom: 29%;
+}
+.col-md-10 h3{
+    color: #6B9080;
+
+}
+.navbar .container-fluid a{
+    text-align: left;
+}
+
+.custom-card{
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-top: 10px solid #6B9080;
+    border-right: 10px solid #6B9080;
+   
+}
+.card{
+    margin-left: 20px;
+}
+.card-title{
+    color: #6B9080;
+}
+.display-5{
+    color: #085c4a;
+}
+.table{
+    border: #085c4a;
+}
+.table th{
+    background-color: #99bfaf;
+    color: #F6FFF8;
+    text-align: center;
+}
+   
