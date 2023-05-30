@@ -59,95 +59,87 @@ body .kotak {
     padding-top: 15px;
     text-align: justify;
 }
-
-#rekomendasi {
+  #rekomendasi {
     background-color: #F6FFF8;
     padding: 40px;
-}
-
-#galery {
+    
+  
+    
+  }
+  
+  #galery {
     padding: 40px;
     background-color: #6B9080;
-}
-
-#rekomendasi h1,
-#galery h1 {
+    
+    
+   
+  }
+  
+  #rekomendasi h1,
+  #galery h1 {
     font-weight: bolder;
     text-align: center;
     letter-spacing: 2px;
     padding: 10px;
-}
-
-#rekomendasi h1 {
+  }
+  
+  #rekomendasi h1 {
     color: #6B9080;
-}
-
-.cardcard .deskripsi p a,
-.cardcard2 .deskripsi p a {
+  }
+  #rekomendasi p,#rekomendasi  a {
+    color:#F6FFF8;
+  }
+  
+  /* .cardcard .deskripsi p a,
+  .cardcard2 .deskripsi p a {
     color: black;
-}
-
-#galery h1 {
+  } */
+  
+  #galery h1 {
     color: #F6FFF8;
-}
-
-.grid-container {
+  }
+  #galery p {
+    color: #085c4a;
+  }
+  
+  .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
     padding: 20px;
     align-items: center;
     text-align: center;
-}
-
-.cardcard {
+  }
+  
+  .cardcard {
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
     background-color: #6B9080;
     border-radius: 20px;
-
-    .deskripsi {
-        padding: 5px;
-    }
-}
-
-.cardcard2 {
+  }
+ 
+  .cardcard2 {
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
-    background-color: #CCE3DE;
+    background-color: #F6FFF8;
     border-radius: 20px;
-
-    .deskripsi {
-        padding: 5px;
-    }
-}
-
-.cardcard img,
-.cardcard2 img {
+  }
+  
+  .cardcard .deskripsi,
+  .cardcard2 .deskripsi {
+    padding: 5px;
+  }
+  
+  .cardcard img,
+  .cardcard2 img {
     height: 250px;
-    width: 300px;
-}
+    width: 100%;
+  }
+  
+  
 
-/* #rekomendasi .card .row .col, #galery .card .row .col{
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-#rekomendasi .card, #galery .card{
-    align-items: center;
-}
-
-#rekomendasi .card .row .col .cardd, #galery .card .row .col .cardd{
-    background-color: #6B9080;
-    width: 310px;
-    border-radius: 20px;
-    .deskripsi{
-        padding: 5px;
-    }
-} */
 
 #services {
     background-color: #F6FFF8;
@@ -163,7 +155,9 @@ body .kotak {
 
 #services .form {
     background-color: #6B9080;
-    padding: 20px;
+    padding: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
 }
 
 #services .form h2 {
@@ -187,6 +181,7 @@ body .kotak {
 #about {
     background-color: #6B9080;
     padding: 40px;
+    margin-top: 40px;
 }
 
 #about h1 {
@@ -293,6 +288,13 @@ h5 {
 
     .image {
         margin-top: 0;
+    }
+    #services .form {
+        background-color: #6B9080;
+        padding: 3px;
+        margin-left: 0;
+        margin-right: 0;
+       
     }
 }
 
@@ -433,6 +435,14 @@ header {
 
     .nav-links li {
         margin: 30px auto;
+    }
+
+    #services .form {
+        background-color: #6B9080;
+        padding: 3px;
+        margin-left: 0;
+        margin-right: 0;
+       
     }
 }
 

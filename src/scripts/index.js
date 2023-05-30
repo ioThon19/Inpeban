@@ -2,7 +2,6 @@ import 'regenerator-runtime';
 import '../styles/main.css';
 
 const axios = require('axios');
-
 const apiUrl = 'https://my-json-server.typicode.com/Biella20/Inpeban/recomendation';
 const apiDataElement = document.getElementById('apiData');
 
