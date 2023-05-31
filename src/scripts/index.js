@@ -21,7 +21,7 @@ axios.get(apiUrl)
 
       const nameElement = document.createElement('p');
       const linkElement = document.createElement('a');
-      linkElement.href = 'detail.html';
+      linkElement.href = `detail.html?id=${item.id}`; // Pass the ID as a query parameter
       linkElement.textContent = item.name;
       nameElement.appendChild(linkElement);
       item2Element.appendChild(nameElement);
