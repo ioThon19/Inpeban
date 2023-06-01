@@ -67,18 +67,16 @@ body .kotak {
     background-color: #F6FFF8;
     padding: 0px;
     
-  
-    
   }
-  
+
   #galery {
     padding: 0px;
     background-color: #6B9080;
-    
-    
-   
+
+
+
   }
-  
+
   #rekomendasi h1,
   #galery h1 {
     font-weight: bolder;
@@ -86,26 +84,26 @@ body .kotak {
     letter-spacing: 2px;
     padding: 10px;
   }
-  
+
   #rekomendasi h1 {
     color: #6B9080;
   }
   #rekomendasi p,#rekomendasi  a {
     color:#F6FFF8;
   }
-  
+
   /* .cardcard .deskripsi p a,
   .cardcard2 .deskripsi p a {
     color: black;
   } */
-  
+
   #galery h1 {
     color: #F6FFF8;
   }
   #galery p {
     color: #085c4a;
   }
-  
+
   .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -114,7 +112,7 @@ body .kotak {
     align-items: center;
     text-align: center;
   }
-  
+
   .cardcard {
     border: 1px solid #ccc;
     padding: 0px;
@@ -122,7 +120,7 @@ body .kotak {
     background-color: #6B9080;
     border-radius: 20px;
   }
- 
+
   .cardcard2 {
     border: 1px solid #ccc;
     padding: 0px;
@@ -130,19 +128,19 @@ body .kotak {
     background-color: #F6FFF8;
     border-radius: 20px;
   }
-  
+
   .cardcard .deskripsi,
   .cardcard2 .deskripsi {
     padding: 5px;
   }
-  
+
   .cardcard img,
   .cardcard2 img {
     height: 250px;
     width: 100%;
   }
-  
-  
+
+
 
 
 #services {
@@ -299,7 +297,7 @@ h5 {
         padding: 3px;
         margin-left: 0;
         margin-right: 0;
-       
+
     }
     #services p {
     color: #6B9080;
@@ -469,7 +467,7 @@ header {
         padding: 3px;
         margin-left: 0;
         margin-right: 0;
-       
+
     }
 }
 
