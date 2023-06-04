@@ -31,5 +31,6 @@
             </form>
         </div>
     </div>
+    <script src="{{asset('js/daftar.js')}}"></script>
 </body>
 </html>

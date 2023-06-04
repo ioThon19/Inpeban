@@ -28,5 +28,6 @@
             </form>
         </div>
     </div>
+    <script src="{{asset('js/login.js')}}"></script>
 </body>
 </html>

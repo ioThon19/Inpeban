@@ -1,17 +1,21 @@
-*{
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'DM Sans', sans-serif;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
 
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 15px;
@@ -19,19 +23,19 @@ nav ul li a{
     letter-spacing: 2px;
 }
 
-body .kotak{
+body .kotak {
     background-color: #6B9080;
     width: 100%;
     padding: 30px;
 }
 
-.row .col .image{
+.row .col .image {
     position: relative;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.row .col .image img{
+.row .col .image img {
     position: absolute;
     top: 0;
     bottom: 52;
@@ -41,97 +45,132 @@ body .kotak{
 
 }
 
-.kotak .row .col img{
+.kotak .row .col img {
     width: 380px;
     height: 300px;
 }
 
-.kotak .row .image{
+.kotak .row .image {
     align-items: center;
 }
 
-.kotak .row .col h1{
-    color:#fff;
+.kotak .row .col h1 {
+    color: #fff;
 }
 
-.kotak .row .col h5{
-    color:#fff;
+.kotak .row .col h5 {
+    color: #fff;
     padding-top: 15px;
     text-align: justify;
 }
-
-#rekomendasi{
+  #rekomendasi {
     background-color: #F6FFF8;
-    padding: 40px;
-}
+    padding: 0px;
+    
+  }
 
-#galery{
-    padding: 40px;
+  #galery {
+    padding: 0px;
     background-color: #6B9080;
-}
 
-#rekomendasi h1, #galery h1{
+
+
+  }
+
+  #rekomendasi h1,
+  #galery h1 {
     font-weight: bolder;
     text-align: center;
     letter-spacing: 2px;
     padding: 10px;
-}
+  }
 
-#rekomendasi h1{
+  #rekomendasi h1 {
     color: #6B9080;
-}
+  }
+  #rekomendasi p,#rekomendasi  a {
+    color:#F6FFF8;
+  }
 
-.card .deskripsi p a{
+  /* .cardcard .deskripsi p a,
+  .cardcard2 .deskripsi p a {
     color: black;
-}
+  } */
 
-#galery h1{
+  #galery h1 {
     color: #F6FFF8;
-}
+  }
+  #galery p {
+    color: #085c4a;
+  }
 
-#rekomendasi .card .row .col, #galery .card .row .col{
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    padding: 20px;
     align-items: center;
     text-align: center;
-    padding: 20px;
-}
+  }
 
-#rekomendasi .card, #galery .card{
-    align-items: center;
-}
-
-#rekomendasi .card .row .col .cardd, #galery .card .row .col .cardd{
+  .cardcard {
+    border: 1px solid #ccc;
+    padding: 0px;
+    text-align: center;
     background-color: #6B9080;
-    width: 310px;
     border-radius: 20px;
-    .deskripsi{
-        padding: 5px;
-    }
-}
+  }
 
-#services{
+  .cardcard2 {
+    border: 1px solid #ccc;
+    padding: 0px;
+    text-align: center;
+    background-color: #F6FFF8;
+    border-radius: 20px;
+  }
+
+  .cardcard .deskripsi,
+  .cardcard2 .deskripsi {
+    padding: 5px;
+  }
+
+  .cardcard img,
+  .cardcard2 img {
+    height: 250px;
+    width: 100%;
+  }
+
+
+
+
+#services {
     background-color: #F6FFF8;
     padding: 40px;
 }
 
-#services h1, #services p{
+#services h1,
+#services p {
     color: #6B9080;
     text-align: center;
     letter-spacing: 1px;
 }
 
-#services .form{
+#services .form {
     background-color: #6B9080;
-    padding: 20px;
+    padding: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
 }
 
-#services .form h2{
+#services .form h2 {
     color: #F6FFF8;
     padding: 10px;
 }
 
-.form-group{
+.form-group {
     padding: 10px;
-    .form-control{
+
+    .form-control {
         background-color: #F6FFF8;
     }
 }
@@ -141,65 +180,63 @@ body .kotak{
     color: #6B9080;
 }
 
-.submit{
-    padding: 10px;
-}
-
-#about{
+#about {
     background-color: #6B9080;
     padding: 40px;
+    margin-top: 40px;
 }
 
-#about h1{
+#about h1 {
     color: #F6FFF8;
     text-align: center;
     padding: 5px;
 }
 
-#about .card .row .col{
+#about .card .row .col {
     color: #6B9080;
     text-align: center;
     padding: 20px;
 }
 
-#about .card .row .col h4{
+#about .card .row .col h4 {
     padding-top: 15px;
+    color: #6B9080;
 }
 
-.profil{
+.profil {
     border-radius: 50%;
 }
 
-.logo1{
+.logo1 {
     background-color: #F6FFF8;
     align-items: center;
     text-align: center;
     padding: 40px;
 }
 
-.logo1 img{
+.logo1 img {
     width: 250px;
     height: 200px;
 }
 
-.logo1 .navbar2{
+.logo1 .navbar2 {
     height: 12%;
     display: flex;
     align-items: center;
 }
 
-.nav2{
+.nav2 {
     flex: 1;
     text-align: center;
     padding-top: 40px;
 }
 
-.nav2 ul li{
+.nav2 ul li {
     list-style: none;
     display: inline-block;
 }
 
-.nav2 ul li a{
+.nav2 ul li a {
     text-decoration: none;
     color: #6B9080;
     font-size: 15px;
@@ -208,7 +245,7 @@ body .kotak{
     margin: 20px;
 }
 
-footer{
+footer {
     background-color: #6B9080;
     color: #F6FFF8;
     text-align: center;
@@ -221,62 +258,93 @@ footer{
 
 
 .kotak {
-  background-color: #f2f2f2;
-  padding: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
 h1 {
-  font-size: 32px;
-  color: white;
-  padding-bottom: 20px;
+    font-size: 32px;
+    color: white;
+    padding-bottom: 20px;
 }
 
 h5 {
-  font-size: 18px;
-  color: #e7e7e7;
-  text-align: justify;
+    font-size: 18px;
+    color: #e7e7e7;
+    text-align: justify;
 }
 
 .image {
-  text-align: center;
-  margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 @media (max-width: 767px) {
-  .row {
-    flex-direction: column;
-  }
+    .row {
+        flex-direction: column;
+    }
 
-  .col-md-6 {
+    .col-md-6 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .image {
+        margin-top: 0;
+    }
+    #services .form {
+        background-color: #6B9080;
+        padding: 3px;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+    #services p {
+    color: #6B9080;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+#itemImage{
     width: 100%;
-    margin-top: 20px;
-  }
+    height: 100%;
+}
 
-  .image {
-    margin-top: 0;
-  }
+
+
+}
+@media (max-width: 961px) {
+   
+#itemImage{
+    width: 100%;
+    height: 100%;
+}
+
+
+
 }
 
 /* batas */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
+
 header {
 
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(../images/background.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../images/background.png);
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -284,27 +352,31 @@ header {
     justify-content: center;
 
 }
-.header-content{
+
+.header-content {
     margin-bottom: 200px;
     color: whitesmoke;
     text-align: center;
 }
 
-.header-content h2{
+.header-content h2 {
     font-size: 4vmin;
 }
-.line{
+
+.line {
     width: 300px;
     height: 4px;
     background: #6B9080;
     margin: 10px auto;
     border-radius: 5px;
 }
-.header-content h1{
+
+.header-content h1 {
     font-size: 7vmin;
     margin-top: 50px;
     margin-bottom: 30px;
 }
+
 .ctn {
     padding: 8px 15px;
     background: #6B9080;
@@ -312,7 +384,7 @@ header {
     color: #e7e7e7;
 }
 
-.menu-btn{
+.menu-btn {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -320,8 +392,9 @@ header {
     cursor: pointer;
     display: none;
 }
+
 /* navbar */
-.navbar{
+.navbar3 {
     position: absolute;
     top: 0;
     left: 0;
@@ -331,58 +404,75 @@ header {
     padding: 20px;
     color: whitesmoke;
 }
-.logo{
+
+.logo {
     padding-left: 10%;
-    padding-top: 20px ;
+    padding-top: 20px;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
     align-items: center;
     padding-right: 8%;
     padding-top: 20px;
 
 }
-.nav-links li{
+
+.nav-links li {
     margin: 0 30px;
 
 }
 
 /* mobile */
-@media (max-width: 850px) {
-    .menu-btn{
+@media (max-width: 1000px) {
+    .menu-btn {
         display: block;
-        padding-top: 20px;
+        padding-top: 34px;
     }
-    .navbar{
+
+    .navbar3 {
         padding: 0;
     }
-    .logo{
+
+    .logo {
         position: absolute;
         top: 30px;
         left: 30px;
         padding-left: 20px;
 
     }
-    .nav-links{
+
+    .nav-links {
         flex-direction: column;
         width: 75%;
         height: 70vh;
         justify-content: center;
-        background:rgb(149, 156, 155);
+        background: rgb(149, 156, 155);
         margin-top: -1000px;
         transition: all 0.5s ease;
 
     }
-    .mobile-menu{
+
+    .mobile-menu {
         margin-top: 0px;
         border-bottom-right-radius: 10%;
     }
-    .nav-links li{
+
+    .nav-links li {
         margin: 30px auto;
+    }
+
+    #services .form {
+        background-color: #6B9080;
+        padding: 3px;
+        margin-left: 0;
+        margin-right: 0;
+
     }
 }
 
-.container-login, .container-daftar{
+.container-login,
+.container-daftar {
     background-color: #F6FFF8;
     width: 100%;
     height: 100vh;
@@ -393,7 +483,8 @@ header {
     justify-content: center;
 }
 
-.kotak-login, .kotak-daftar{
+.kotak-login,
+.kotak-daftar {
     height: 75%;
     width: 80%;
     padding: 20px;
@@ -403,19 +494,22 @@ header {
     border-radius: 30px;
 }
 
-.kotak-login h1, .kotak-daftar h1{
+.kotak-login h1,
+.kotak-daftar h1 {
     color: #6B9080;
     font-weight: bolder;
     letter-spacing: 1px;
     padding: 30px;
 }
 
-.button-login, .button-daftar{
+.button-login,
+.button-daftar {
     background-color: #6B9080;
     width: 80%;
 }
 
-.input-login, .input-daftar{
+.input-login,
+.input-daftar {
     background-color: #CCE3DE;
     width: 80%;
 }
@@ -426,17 +520,20 @@ header {
     margin-bottom: 3%;
 }
 
-.kotak-login form p, .kotak-daftar form p{
-    padding: 10px;;
+.kotak-login form p,
+.kotak-daftar form p {
+    padding: 10px;
+    ;
 }
 
-.kotak-login form p a, .kotak-daftar form p a{
+.kotak-login form p a,
+.kotak-daftar form p a {
     text-decoration: none;
     color: #6B9080;
     font-weight: bolder;
 }
 
-.container-detail{
+.container-detail {
     background-color: #F6FFF8;
     width: 100%;
     height: 100vh;
@@ -445,30 +542,160 @@ header {
     text-align: center;
 }
 
-.container-detail .h1detail{
+.container-detail .h1detail {
     font-weight: bolder;
     color: #6B9080;
-    padding: 30px;
+    padding: 6%;
 }
 
-.container-detail .row .deskripsi-detail{
+.container-detail .row .deskripsi-detail {
     text-align: left;
     padding: 40px;
 }
 
-.deskripsi-detail h5, .deskripsi-detail h1{
+.deskripsi-detail h5,
+.deskripsi-detail h1 {
     color: #6B9080;
 }
 
-.deskripsi-detail h4{
-    width: 65%;
+.deskripsi-detail h4 {
+    width: 85%;
     background-color: #CCE3DE;
     padding: 8px;
     border-radius: 10px;
 }
 
-.deskripsi-img{
+.deskripsi-img {
     display: flex;
     justify-content: center;
     margin: 40px;
+    width: 300px;
+    height: 300px;
 }
+
+.col h4{
+    color: #063a23;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+/* batas */
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    background-color: #F6FFF8;
+}
+
+.container-fluid h1 {
+    color: #085c4a;
+    font-size: 32px;
+    padding-top: 3px;
+    padding-right: 62%;
+    padding-bottom: 2px;
+}
+
+.logo1 {
+    padding-left: 6%;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.fas {
+    padding-right: 20px;
+    color: #6B9080;
+}
+
+.far {
+    padding-right: 20px;
+    color: #6B9080;
+}
+
+.container-fluid {
+    padding-bottom: 2px;
+}
+
+#row {
+    margin-top: 4%;
+
+}
+
+.col-md-2 {
+    background-color: #CCE3DE;
+    margin-top: 2px;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+}
+
+.nav {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #6B9080;
+
+}
+
+.nav-link a :hover {
+    color: #CCE3DE;
+}
+
+.fas {
+    padding-right: 20px;
+    color: #6B9080;
+}
+
+.far {
+    padding-right: 20px;
+    color: #6B9080;
+}
+
+.col-md-10 {
+    background-color: rgb(221, 239, 237);
+    padding: 30px;
+    padding-top: 40px;
+    padding-bottom: 29%;
+}
+
+.col-md-10 h3 {
+    color: #6B9080;
+
+}
+
+.navbar .container-fluid a {
+    text-align: left;
+}
+
+.custom-card {
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-top: 10px solid #6B9080;
+    border-right: 10px solid #6B9080;
+
+}
+
+.card {
+    margin-left: 20px;
+}
+
+.card-title {
+    color: #6B9080;
+}
+
+.display-5 {
+    color: #085c4a;
+}
+
+.table {
+    border: #085c4a;
+}
+
+.table th {
+    background-color: #99bfaf;
+    color: #F6FFF8;
+    text-align: center;
+}
+
+
