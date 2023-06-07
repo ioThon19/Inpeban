@@ -1,3 +1,15 @@
+<?php 
+
+$sumber1 = 'https://my-json-server.typicode.com/Biella20/Inpeban/gallery';
+$konten1 = file_get_contents($sumber1);
+$data1 = json_decode($konten1, true);
+//var_dump($data);
+
+$sumber2 = 'https://my-json-server.typicode.com/Biella20/Inpeban/recomendation';
+$konten2 = file_get_contents($sumber2);
+$data2 = json_decode($konten2, true);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,15 +76,49 @@
 
   <div id="rekomendasi">
     <h1>Rekomendasi</h1>
-    <div class="grid-container" id="apiData"></div>
+      <div class="card">
+        <div class="row">
+          <?php foreach ($data2 as $row) {
+            # code...
+          ?>
+          <div class="col">
+            <div class="cardd1">
+              <img src="<?php echo $row['image'] ?>" alt="card">
+              <div class="deskripsi">
+                <p><a href="detail?id=<?php echo $row['id'];?>"><?php echo $row['name'] ?></a></p>
+                <p>⭐ <?php echo $row['rating'] ?></p>
+                <p><?php echo $row['category'] ?></p>
+              </div>
+            </div>
+          </div>
+          <?php }?>
+        </div>
+      </div>
   </div>
 
 
 
   <div id="galery">
     <h1>Galeri</h1>
-    <div class="grid-container " id="api2Data"></div>
+      <div class="card">
+        <div class="row">
+          <?php foreach ($data1 as $row) {
+            # code...
+          ?>
+          <div class="col">
+            <div class="cardd2">
+              <img src="<?php echo $row['image'] ?>" alt="card">
+              <div class="deskripsi">
+                <p><?php echo $row['name'] ?></p>
+              </div>
+            </div>
+          </div>
+          <?php }?>
+
+        </div>
+      </div>
   </div>
+
   <article>
 
   <div id="services">
@@ -186,7 +232,9 @@
 
   </script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="{{asset('js/index.js')}}"></script>
+  {{-- <script src="{{asset('assets/js/index.js')}}"></script>
+  <script src="{{ asset('/') }}assets/js/index.js"></script> --}}
+
   <footer>
     <p style="color: #F6FFF8;">Inpeban@Copyright2023</p>
   </footer>

@@ -65,12 +65,12 @@ body .kotak {
 }
   #rekomendasi {
     background-color: #F6FFF8;
-    padding: 0px;
+    padding: 40px;
     
   }
 
   #galery {
-    padding: 0px;
+    padding: 40px;
     background-color: #6B9080;
 
 
@@ -92,11 +92,6 @@ body .kotak {
     color:#F6FFF8;
   }
 
-  /* .cardcard .deskripsi p a,
-  .cardcard2 .deskripsi p a {
-    color: black;
-  } */
-
   #galery h1 {
     color: #F6FFF8;
   }
@@ -104,16 +99,17 @@ body .kotak {
     color: #085c4a;
   }
 
-  .grid-container {
+  .cardd1, .cardd2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     padding: 20px;
+    margin: 20px;
     align-items: center;
     text-align: center;
   }
 
-  .cardcard {
+  .cardd1 {
     border: 1px solid #ccc;
     padding: 0px;
     text-align: center;
@@ -121,7 +117,7 @@ body .kotak {
     border-radius: 20px;
   }
 
-  .cardcard2 {
+  .cardd2 {
     border: 1px solid #ccc;
     padding: 0px;
     text-align: center;
@@ -129,13 +125,13 @@ body .kotak {
     border-radius: 20px;
   }
 
-  .cardcard .deskripsi,
-  .cardcard2 .deskripsi {
+  .cardd1 .deskripsi,
+  .cardd2 .deskripsi {
     padding: 5px;
   }
 
-  .cardcard img,
-  .cardcard2 img {
+  .cardd1 img,
+  .cardd2 img {
     height: 250px;
     width: 100%;
   }

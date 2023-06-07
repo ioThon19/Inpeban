@@ -15,22 +15,27 @@
 <body>
     <div class="container-daftar">
         <div class="kotak-daftar">
+            @if($errors->any())
+            @foreach($errors->all() as $err)
+            <p class="alert alert-danger">{{$err}}</p>
+            @endforeach
+            @endif
             <h1>DAFTAR</h1>
-            <form action="/daftar" method="POST">
+            <form method = "POST" action="{{route ('daftar.action') }}">
+                @csrf
                 <div class="input-container">
-                    <input type="text" class="form-control form-control-lg input-daftar" placeholder="Email">
+                    <input type="email" name="email" class="form-control form-control-lg input-daftar" placeholder="Email">
                 </div>
                 <div class="input-container">
-                    <input type="text" class="form-control form-control-lg input-daftar" placeholder="Username">
+                    <input type="text" name="username" class="form-control form-control-lg input-daftar" placeholder="Username">
                 </div>
                 <div class="input-container">
-                    <input type="password" class="form-control form-control-lg input-daftar" placeholder="Password">
+                    <input type="password" name="password" class="form-control form-control-lg input-daftar" placeholder="Password">
                 </div>
-                <button type="button" class="btn btn-primary btn-lg btn-block button-daftar">DAFTAR</button>
+                <button type="submit" class="btn btn-primary btn-lg btn-block button-daftar">DAFTAR</button>
                 <p>Sudah mempunyai akun? <a href="login">MASUK</a></p>
             </form>
         </div>
     </div>
-    <script src="{{asset('js/daftar.js')}}"></script>
 </body>
 </html>

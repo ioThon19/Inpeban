@@ -23,7 +23,7 @@
       <h1>Pengaduan Masyarakat</h1>
       <div class="iconv ">
         <h5>
-          <i class='fas fa-sign-out-alt ' style='font-size:30px'></i>
+          <a class="nav-link" href="{{route ('logout')}}"><i class='fas fa-sign-out-alt' style='font-size:30px'></i></a>
         </h5>
 
       </div>
@@ -36,7 +36,7 @@
     <div class="col-md-2" >
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a class="nav-link" href="index2"><i class='fas fa-tachometer-alt' style='font-size:30px'></i>Dashboard</a><hr class="bg-secondary">
+        <a class="nav-link" href="admin"><i class='fas fa-tachometer-alt' style='font-size:30px'></i>Dashboard</a><hr class="bg-secondary">
       </li>
       <li class="nav-item">
         <a class="nav-link" href="masuk"><i class='fas fa-download' style='font-size:30px'></i>Laporan masuk</a><hr class="bg-secondary">
@@ -103,7 +103,7 @@
 
     </div>
   </div>
-  <script src="{{asset('js/proses.js')}}"></script>
+  <script src="{{asset('assets/js/proses.js')}}"></script>
 </body>
 <footer>
   <p>Inpeban@Copyright2023</p>

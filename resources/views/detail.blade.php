@@ -1,3 +1,12 @@
+<?php 
+
+$id = @$_GET['id'];
+$sumber2 = 'https://my-json-server.typicode.com/Biella20/Inpeban/recomendation?id='.$id;
+$konten2 = file_get_contents($sumber2);
+$data2 = json_decode($konten2, true);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,21 +25,27 @@
     <div class="container-detail">
         <h1 class="h1detail">Halaman Detail</h1>
         <div class="row">
+            <?php foreach ($data2 as $row) {
+                # code...
+            ?>
+
             <div class="col deskripsi-img">
-                <img id="itemImage" src="" alt="Item Image">
+                <img id="itemImage" src="<?php echo $row['image'] ?>" alt="Item Image">
             </div>
             <div class="col deskripsi-detail">
-                <h1>⭐<span id="itemRating"></span></h1>
+                <h1>⭐<span id="itemRating"><?php echo $row['rating'] ?></span></h1>
                 <h5>Nama Tempat</h5>
-                <h4 id="itemName"></h4>
+                <h4 id="itemName"><?php echo $row['name'] ?></h4>
                 <h5>Kategori</h5>
-                <h4 id="itemCategory"></h4>
+                <h4 id="itemCategory"><?php echo $row['category'] ?></h4>
                 <h5>Alamat</h5>
-                <h4 id="itemAddress"></h4>
+                <h4 id="itemAddress"><?php echo $row['address'] ?></h4>
             </div>
+            <?php }?>
+
         </div>
     </div>
-    <script src="{{asset('js/detail.js')}}"></script>
+    <script src="{{asset('assets/js/detail.js')}}"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>

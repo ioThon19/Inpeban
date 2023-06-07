@@ -15,19 +15,29 @@
 <body>
     <div class="container-login">
         <div class="kotak-login">
+            @if(session('succes'))
+            <p class="alert alert-primary">{{session('succes')}}</p>
+            @endif
+            @if($errors->any())
+            @foreach($errors->all() as $err)
+            <p class="alert alert-danger">{{$err}}</p>
+            @endforeach
+            @endif
+
             <h1>LOGIN</h1>
-            <form action="/login" method="POST">
+            <form method = "POST" action="{{route ('login.action') }}">
+                @csrf
                 <div class="input-container">
-                    <input type="text" id="username" class="form-control form-control-lg input-login" placeholder="Username">
+                    <input type="text" name="username" id="username" class="form-control form-control-lg input-login" placeholder="Username">
                 </div>
                 <div class="input-container">
-                    <input type="password" id="password" class="form-control form-control-lg input-login" placeholder="Password">
+                    <input type="password" name="password" id="password" class="form-control form-control-lg input-login" placeholder="Password">
                 </div>
-                <button type="button" id="login-button" class="btn btn-primary btn-lg btn-block button-login">LOGIN</button>
+                <button type="submit" id="login-button" class="btn btn-primary btn-lg btn-block button-login">LOGIN</button>
                 <p>Belum mempunyai akun? <a href="daftar">DAFTAR</a></p>
             </form>
+            
         </div>
     </div>
-    <script src="{{asset('js/login.js')}}"></script>
 </body>
 </html>
