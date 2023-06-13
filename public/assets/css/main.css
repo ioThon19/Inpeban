@@ -1,0 +1,463 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------------------------
+    NAVBAR
+----------------------------------------------------- */
+.navbar3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.logo {
+    padding-left: 10%;
+    padding-top: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    padding-right: 8%;
+    padding-top: 20px;
+
+}
+
+.nav-links li {
+    margin: 0 30px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+.nav-links li a:hover {
+    color: #a7b1ac;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+ /* ---------------------------------------------------
+   JUMBOTROON
+----------------------------------------------------- */
+header {
+
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../images/background.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.header-content {
+    margin-bottom: 200px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 300px;
+    height: 4px;
+    background: #6B9080;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: #6B9080;
+    border-radius: 30px;
+    color: #e7e7e7;
+}
+
+
+ /* ---------------------------------------------------
+    TUBAN
+----------------------------------------------------- */
+h1 {
+    font-size: 32px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+h5 {
+    font-size: 18px;
+    color: #e7e7e7;
+    text-align: justify;
+}
+
+body .kotak {
+    background-color: #6B9080;
+    width: 100%;
+    padding: 30px;
+}
+
+.row .col .image {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.row .col .image img {
+    position: absolute;
+    top: 0;
+    bottom: 52;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+
+
+/* ---------------------------------------------------
+    REKOMENDASI & GALERI
+----------------------------------------------------- */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 20px;
+    align-items: center;
+    grid-gap: 40px;
+  }
+
+  
+  .cardd3 img,  .cardd4 img {
+    height: auto;
+    width: 100%;
+    height: 250px;
+  }
+
+  .grid > .cardd3 {
+    border-radius: 30px;
+    text-align: center;
+    background-color: #6B9080;
+    
+  }
+  /* .grid > .cardd3 img,  .grid > .cardd4 img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+  } */
+
+  #rekomendasi {
+    background-color: #F6FFF8;
+    padding: 40px;
+  }
+
+  #rekomendasi h1 {
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: #6B9080;
+  }
+  
+  #rekomendasi p,
+  #rekomendasi a {
+    color:#F6FFF8;
+    font-size: 18px;
+    
+  }
+
+  #galery {
+    padding: 40px;
+    background-color: #6B9080;
+  }
+
+  #galery h1 {
+    color: #F6FFF8;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 10px;
+  }
+
+  #galery h1 {
+    color: #F6FFF8;
+  }
+  
+  #galery p {
+    color: #6B9080;
+    font-size: 20px;
+  }
+  .grid > .cardd4 {
+    border-radius: 30px;
+    text-align: center;
+    background-color: #F6FFF8;
+    
+  }
+
+
+/* ---------------------------------------------------
+    LAYANAN
+----------------------------------------------------- */
+#services {
+    background-color: #F6FFF8;
+    padding: 70px;
+}
+
+#services h1,
+#services p {
+    color: #6B9080;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+
+/* ---------------------------------------------------
+    TENTANG KAMI
+----------------------------------------------------- */
+#about {
+    background-color: #6B9080;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+#about h1 {
+    color: #F6FFF8;
+    text-align: center;
+    padding: 5px;
+}
+
+#about .card .row .col {
+    color: #6B9080;
+    text-align: center;
+    padding: 20px;
+}
+
+#about .card .row .col h4 {
+    padding-top: 15px;
+    color: #6B9080;
+}
+
+.profil {
+    border-radius: 50%;
+}
+
+
+/* ---------------------------------------------------
+    FOOTER
+----------------------------------------------------- */
+.logo1 {
+    background-color: #F6FFF8;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.logo1 img {
+    width: 250px;
+    height: 200px;
+}
+
+.logo1 .navbar2 {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.nav2 {
+    flex: 1;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.nav2 ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav2 ul li a {
+    text-decoration: none;
+    color: #6B9080;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin: 20px;
+}
+footer {
+    background-color: #6B9080;
+    color: #F6FFF8;
+    text-align: center;
+    height: 60px;
+    padding-top: 20px;
+}
+
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 1000px) {
+    .menu-btn {
+        display: block;
+        padding-top: 34px;
+    }
+
+    .navbar3 {
+        padding: 0;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        padding-left: 20px;
+
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 75%;
+        height: 70vh;
+        justify-content: center;
+        background: rgb(149, 156, 155);
+        margin-top: -1000px;
+        transition: all 0.5s ease;
+
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 10%;
+    }
+
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+    #services .form {
+        background-color: #6B9080;
+        padding: 3px;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+}
+
+
+ 
+  @media screen and (max-width: 1200px) {
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+      
+  .cardd3 img,.cardd4 img {
+    height: auto;
+    width: 100%;
+    height: 250px;
+  }
+  }
+
+  @media screen and (max-width: 850px) {
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+      
+  .cardd3 img,.cardd4 img {
+    height: auto;
+    width: 100%;
+    height: 250px;
+  }
+  }
+  @media screen and (max-width: 650px) {
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+      
+  .cardd3 img, .cardd4 img {
+    height: auto;
+    width: 100%;
+    height: 200px;
+  }
+
+  #services p {
+      text-align: justify;
+      
+  }
+  
+  }
+  @media screen and (max-width: 400px) {
+    .cardd3 img, .cardd4 img {
+        height: auto;
+        width: 100%;
+        height: 200px;
+      }
+
+  
+  }
+  @media screen and (max-width: 320px) {
+    .cardd3 img, .cardd4 img {
+        height: auto;
+        width: 100%;
+        height: 150px;
+      }
+
+      .profil {
+        border-radius: 50%;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
