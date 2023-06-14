@@ -14,7 +14,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
                     <h4 class="semi-bold mb-0 text-white">INPEBAN</h4>
-                    <p class="italic mt-0 text-white">Pengaduan Masyarakat</p>
+                    <p class="italic mt-0 text-white">Informasi Pelayanan Tuban</p>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +38,10 @@
                                 data-target="#loginModal">Masuk</button>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('inpeban.formRegister') }}" class="btn btn-outline-purple">Daftar</a>
+                            <a href="{{ route('inpeban.formRegister') }}" class="btn btn-outline-purple mb-2">Daftar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="admin" class="btn btn-outline-purple ml-2">Masuk sebagai Petugas</a>
+                            <a href="admin" class="btn btn-outline-purple">Masuk sebagai Petugas</a>
                         </li>
 
                     </ul>
@@ -91,15 +91,7 @@
         </div>
     </div>
 </div>
-{{-- Section Hitung Aduan --}}
-<div class="aduan mt-5">
-    <div class="bg-purple">
-        <div class="text-center">
-            <h5 class="medium text-white mt-3">JUMLAH LAPORAN SEKARANG</h5>
-            <h2 class="medium text-white">10</h2>
-        </div>
-    </div>
-</div>
+
 {{-- Footer --}}
 <div class="mt-5">
     <hr>

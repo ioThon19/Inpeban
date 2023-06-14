@@ -99,8 +99,9 @@ class UserController extends Controller
             return redirect()->back()->withInput()->withErrors($validate);
         }
 
-        if ($request->file('foto')) {
-            $data['foto'] = $request->file('foto')->store('assets/aduan', 'public');
+        if($request->hasFile('foto')) {
+            $request->file('foto')->move('aduan/', $request->file('foto')->getClientOriginalName());
+            $data['foto'] = $request->file('foto')->getClientOriginalName();
         }
 
         date_default_timezone_set('Asia/Bangkok');

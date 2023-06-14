@@ -57,7 +57,9 @@
                             <tr>
                                 <th>Foto</th>
                                 <td>:</td>
-                                <td><img src="{{ Storage::url($aduan->foto) }}" alt="foto aduan" class="embed-responsive"></td>
+                                <td>
+                                    <img src="{{ asset('aduan/'.$aduan->foto) }}" alt="foto aduan" class="embed-responsive" style="width: 60px">
+                                </td>
                             </tr>
                             <tr>
                                 <th>Isi Laporan</th>

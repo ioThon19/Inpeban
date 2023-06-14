@@ -140,14 +140,11 @@
                 </div>
             </div>
             <div class="laporan-mid">
-                <div class="judul-laporan">
-                    {{ $v->judul_laporan }}
-                </div>
                 <p>{{ $v->isi_laporan }}</p>
             </div>
             <div class="laporan-bottom">
                 @if ($v->foto != null)
-                <img src="{{ Storage::url($v->foto) }}" alt="{{ 'Gambar '.$v->judul_laporan }}" class="gambar-lampiran">
+                <img src="{{ asset('aduan/'.$v->foto) }}" alt="" class="gambar-lampiran" style="border-radius: 10px">
                 @endif
                 @if ($v->tanggapan != null)
                 <p class="mt-3 mb-1">{{ '*Tanggapan dari '. $v->tanggapan->petugas->nama_petugas }}</p>

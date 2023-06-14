@@ -62,19 +62,19 @@ $data2 = json_decode($konten2, true);
         </p>
       </div>
     </header>
-  
+
     <div class="kotak tuban">
       <div class="row">
         <div class="col-md-6">
           <h1>Kabupaten Tuban</h1>
-          <h5>Kabupaten Tuban merupakan bagian dari Provinsi Jawa Timur. Kabupaten Tuban dengan City Branding Tuban Bumi Wali The Spirit of Harmony ini 
-            adalah kota bersejarah, juga merupakan pintu gerbang Provinsi Jawa Timur dari arah Provinsi Jawa Tengah. Selain itu, berada di lintasan 
-            Jaur Pantura Pulau Jawa, terletak di Ujung Paling Barat Provinsi Jawa Timur. Posisi Astronomi berada di titik Koordinat antara 6,40' - 7,14' 
-            Lintang Selatan (LS) serta antara 111,30' - 112,35 Bujur Timur (BT). Luas Wilayah daratan 1.839,94 km2, luas wilayah lautan 22.608 km2. 
-            Panjang Pantai diperkirakan 65 km. Di sebelah Utara Kabupaten Tuban terbentang Laut Jawa, sebelah selatan mengalir air Sungai Bengawan Solo, 
-            sebelah barat mengalir Sungai Sarang dan tepian timur mengalir Sungai Lohgung. Pada bagian tengah Kabupaten Tuban, diantara pesisir Laut Jawa 
-            dan Sungai Bengawan Solo, terhampar Pegunungan Kapur Utara. Secara geologis Kabupaten Tuban berada dalam cekungan Wilayah Jawa Timur Bagian Utara, 
-            memanjang dari arah barat ke timur mulai dari Semarang sampai Surabaya. Sebagian besar wilayah Kabupaten Tuban dalam Zona Rembang, didominasi endapan 
+          <h5>Kabupaten Tuban merupakan bagian dari Provinsi Jawa Timur. Kabupaten Tuban dengan City Branding Tuban Bumi Wali The Spirit of Harmony ini
+            adalah kota bersejarah, juga merupakan pintu gerbang Provinsi Jawa Timur dari arah Provinsi Jawa Tengah. Selain itu, berada di lintasan
+            Jaur Pantura Pulau Jawa, terletak di Ujung Paling Barat Provinsi Jawa Timur. Posisi Astronomi berada di titik Koordinat antara 6,40' - 7,14'
+            Lintang Selatan (LS) serta antara 111,30' - 112,35 Bujur Timur (BT). Luas Wilayah daratan 1.839,94 km2, luas wilayah lautan 22.608 km2.
+            Panjang Pantai diperkirakan 65 km. Di sebelah Utara Kabupaten Tuban terbentang Laut Jawa, sebelah selatan mengalir air Sungai Bengawan Solo,
+            sebelah barat mengalir Sungai Sarang dan tepian timur mengalir Sungai Lohgung. Pada bagian tengah Kabupaten Tuban, diantara pesisir Laut Jawa
+            dan Sungai Bengawan Solo, terhampar Pegunungan Kapur Utara. Secara geologis Kabupaten Tuban berada dalam cekungan Wilayah Jawa Timur Bagian Utara,
+            memanjang dari arah barat ke timur mulai dari Semarang sampai Surabaya. Sebagian besar wilayah Kabupaten Tuban dalam Zona Rembang, didominasi endapan
             batuan Karbonat. Zona Rembang didominasi Perbukitan Kapur.
           </h5>
         </div>
@@ -87,19 +87,18 @@ $data2 = json_decode($konten2, true);
     </div>
   </div>
 
-  
+
 
   <div id = "rekomendasi">
     <h1>Rekomendasi</h1>
-    <div class="grid">  
-      <?php foreach ($data2 as $row) { ?>  
+    <div class="grid">
+      <?php foreach ($data2 as $row) { ?>
         <div class="cardd3">
           <img src="<?php echo $row['image'] ?>" alt="card">
           <div class="deskripsi">
             <p>⭐<?php echo $row['rating'] ?></p>
             <p><a href="detail?id=<?php echo $row['id']; ?>"><?php echo $row['name'] ?></a></p>
-            {{-- <p><?php echo $row['category'] ?></p> --}}
-          </div>   
+          </div>
         </div>
       <?php } ?>
     </div>
@@ -107,8 +106,8 @@ $data2 = json_decode($konten2, true);
 
   <div id = "galery">
     <h1>Galeri</h1>
-    <div class="grid">  
-    <?php foreach ($data1 as $row) { ?>  
+    <div class="grid">
+    <?php foreach ($data1 as $row) { ?>
         <div class="cardd4">
         <img src="<?php echo $row['image'] ?>" alt="card">
             <div class="deskripsi">
@@ -149,7 +148,7 @@ $data2 = json_decode($konten2, true);
           <img src="assets/images/lidya.jpeg" alt="profil" class="profil">
           <h4>Lidya Gabriella Tarigan</h4>
           <p>Pengembang Backend & Desainer UI/UX</p>
-          <p>Universitas Sumatra Utara</p>
+          <p>Universitas Sumatera Utara</p>
         </div>
         <div class="col">
           <img src="assets/images/rossy.jpg" alt="profil" class="profil">

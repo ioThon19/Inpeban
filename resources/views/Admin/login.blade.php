@@ -50,7 +50,7 @@
                     {{ Session::get('pesan') }}
                 </div>
                 @endif
-                <a href="{{ route('inpeban.index') }}" class="btn btn-warning text-white mt-3" style="width: 100%">Kembali ke Halaman Utama</a>
+                <a href="{{ route('inpeban.index') }}" class="btn btn-purple mt-3 mb-3" style="width: 100%; background:#cce3de; color:#6b9080; font-weight: bold">Kembali ke Halaman Utama</a>
             </div>
         </div>
     </div>
