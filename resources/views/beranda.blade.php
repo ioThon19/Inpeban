@@ -23,7 +23,16 @@ $data2 = json_decode($konten2, true);
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
+  <link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
+  <link rel="icon" type="image/png" sizes="192x192"  href="{{asset('android-chrome-512x512.png')}}">
+  <link rel="icon" type="image/png" sizes="192x192"  href="{{asset('android-chrome-192x192.png')}}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-32x32.png')}}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-16x16.png')}}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{asset('apple-touch-icon.png')}}">
+  <link rel="manifest" href="{{asset('site.webmanifest')}}">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description"
+  content="Informasi untuk daya tarik wisata dan layanan aduan masyarakat.">
 
 
 </head>
@@ -34,44 +43,51 @@ $data2 = json_decode($konten2, true);
   <nav class="navbar3">
     <img class="logo" src="/assets/images/logo.png" alt="logo">
     <ul class="nav-links">
-      <li><a href="">Beranda</a></li>
+      <li><a href="#beranda">Beranda</a></li>
       <li><a href="#rekomendasi">Rekomendasi</a></li>
       <li><a href="#galery">Galeri</a></li>
       <li><a href="#services">Layanan</a></li>
       <li><a href="#about">Tentang Kami</a></li>
       <li class="ctn"><a href="{{ route('inpeban.index') }}">Masuk</a></li>
     </ul>
-    <img src="assets/images/button.png" alt="" class="menu-btn">
+    <img src="assets/images/burger.svg" alt="" class="menu-btn">
   </nav>
 
-  <header>
-    <div class="header-content">
-      <h1>SELAMAT DATANG DI INPEBAN</h1>
-      <div class="line"></div>
-      <p>INPEBAN atau Informasi Pelayanan Tuban merupakan sebuah sistem informasi kabupaten Tuban yang menyajikan informasi dan potensi serta sebagai platfrom pelayanan publik untuk memberikan wadah kepada masyarakat Tuban dalam menyampaikan keluhan atau masalah yang terjadi di desanya.
-      </p>
-    </div>
-  </header>
-
-  <div class="kotak tuban">
-    <div class="row">
-      <div class="col-md-6">
-        <h1>Kabupaten Tuban</h1>
-        <h5>Kabupaten Tuban Merupakan salah satu Kabupaten dari 38 Kabupaten dan Kota yang ada di wilayah administratif
-          Provinsi Jawa Timur. Wilayah Kabupaten Tuban berada di jalur pantai utara (Pantura) Pulau Jawa. Luasnya adalah
-          1.904,70 km² dan panjang pantai mencapai 65 km. Penduduknya berjumlah sekitar 1 juta jiwa. Tuban disebut
-          sebagai Kota Wali karena Tuban adalah salah satu kota di Jawa yang menjadi pusat penyebaran ajaran Agama Islam
-          namun beberapa kalangan ada yang memberikan julukan sebagai kota tuak karena daerah Tuban sangat terkenal akan
-          penghasil minuman (tuak & legen) yang berasal dari sari bunga siwalan (ental).
-        </h5>
+  <div id="beranda">
+    <header>
+      <div class="header-content">
+        <h1>SELAMAT DATANG DI INPEBAN</h1>
+        <div class="line"></div>
+        <p>INPEBAN atau Informasi Pelayanan Tuban merupakan sebuah sistem informasi kabupaten Tuban yang menyajikan informasi dan potensi serta sebagai platfrom pelayanan publik untuk memberikan wadah kepada masyarakat Tuban dalam menyampaikan keluhan atau masalah yang terjadi di desanya.
+        </p>
       </div>
-      <div class="col-md-6">
-        <div class="image">
-          <img src="assets/images/tuban.png" alt="tuban" class="img-fluid">
+    </header>
+  
+    <div class="kotak tuban">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Kabupaten Tuban</h1>
+          <h5>Kabupaten Tuban merupakan bagian dari Provinsi Jawa Timur. Kabupaten Tuban dengan City Branding Tuban Bumi Wali The Spirit of Harmony ini 
+            adalah kota bersejarah, juga merupakan pintu gerbang Provinsi Jawa Timur dari arah Provinsi Jawa Tengah. Selain itu, berada di lintasan 
+            Jaur Pantura Pulau Jawa, terletak di Ujung Paling Barat Provinsi Jawa Timur. Posisi Astronomi berada di titik Koordinat antara 6,40' - 7,14' 
+            Lintang Selatan (LS) serta antara 111,30' - 112,35 Bujur Timur (BT). Luas Wilayah daratan 1.839,94 km2, luas wilayah lautan 22.608 km2. 
+            Panjang Pantai diperkirakan 65 km. Di sebelah Utara Kabupaten Tuban terbentang Laut Jawa, sebelah selatan mengalir air Sungai Bengawan Solo, 
+            sebelah barat mengalir Sungai Sarang dan tepian timur mengalir Sungai Lohgung. Pada bagian tengah Kabupaten Tuban, diantara pesisir Laut Jawa 
+            dan Sungai Bengawan Solo, terhampar Pegunungan Kapur Utara. Secara geologis Kabupaten Tuban berada dalam cekungan Wilayah Jawa Timur Bagian Utara, 
+            memanjang dari arah barat ke timur mulai dari Semarang sampai Surabaya. Sebagian besar wilayah Kabupaten Tuban dalam Zona Rembang, didominasi endapan 
+            batuan Karbonat. Zona Rembang didominasi Perbukitan Kapur.
+          </h5>
+        </div>
+        <div class="col-md-6">
+          <div class="image">
+            <img src="assets/images/tuban.png" alt="tuban" class="img-fluid">
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  
 
   <div id = "rekomendasi">
     <h1>Rekomendasi</h1>
@@ -80,9 +96,9 @@ $data2 = json_decode($konten2, true);
         <div class="cardd3">
           <img src="<?php echo $row['image'] ?>" alt="card">
           <div class="deskripsi">
+            <p>⭐<?php echo $row['rating'] ?></p>
             <p><a href="detail?id=<?php echo $row['id']; ?>"><?php echo $row['name'] ?></a></p>
-            <p>⭐ <?php echo $row['rating'] ?></p>
-            <p><?php echo $row['category'] ?></p>
+            {{-- <p><?php echo $row['category'] ?></p> --}}
           </div>   
         </div>
       <?php } ?>
@@ -150,7 +166,7 @@ $data2 = json_decode($konten2, true);
     <div class="navbar2">
       <nav class="nav2">
         <ul>
-          <li><a href="#home">Beranda</a></li>
+          <li><a href="#beranda">Beranda</a></li>
           <li><a href="#rekomendasi">Rekomendasi</a></li>
           <li><a href="#galery">Galeri</a></li>
           <li><a href="#services">Layanan</a></li>

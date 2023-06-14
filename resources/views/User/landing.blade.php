@@ -12,7 +12,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                     <h4 class="semi-bold mb-0 text-white">INPEBAN</h4>
                     <p class="italic mt-0 text-white">Pengaduan Masyarakat</p>
                 </a>

@@ -71,7 +71,7 @@ a:focus {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #a4b3c2;
+  background: #A4C3B2;
 }
 
 #sidebar ul.components {
@@ -98,7 +98,7 @@ a:focus {
 #sidebar ul li.active > a,
 a[aria-expanded=true] {
   color: #fff;
-  background: #a4b3c2;
+  background: #A4C3B2;
 }
 
 a[data-toggle=collapse] {

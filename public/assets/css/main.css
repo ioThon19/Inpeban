@@ -168,18 +168,24 @@ body .kotak {
     grid-gap: 40px;
   }
 
-  
   .cardd3 img,  .cardd4 img {
     height: auto;
     width: 100%;
     height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
   }
 
   .grid > .cardd3 {
     border-radius: 30px;
     text-align: center;
     background-color: #6B9080;
-    
+    box-shadow: 0 8px 12px 0 #00000033;
+  }
+
+  .grid > .cardd3:hover {
+    transform: scale(1.05);
+    transition: ease-in 0.1s;
   }
   /* .grid > .cardd3 img,  .grid > .cardd4 img{
     border-top-left-radius: 30px;
@@ -203,8 +209,11 @@ body .kotak {
   #rekomendasi p,
   #rekomendasi a {
     color:#F6FFF8;
-    font-size: 18px;
-    
+    font-size: 20px;
+  }
+
+  #rekomendasi p {
+    margin-top: 10px;
   }
 
   #galery {
@@ -227,13 +236,105 @@ body .kotak {
   #galery p {
     color: #6B9080;
     font-size: 20px;
+    margin-top: 10px;
   }
   .grid > .cardd4 {
-    border-radius: 30px;
+    border-radius: 20px;
     text-align: center;
     background-color: #F6FFF8;
-    
+    box-shadow: 0 8px 12px 0 #00000033;
   }
+
+  .grid > .cardd4:hover {
+    transform: scale(1.05);
+    transition: ease-in 0.1s;
+  }
+  
+
+/* ---------------------------------------------------
+    DETAIL
+----------------------------------------------------- */
+.container-detail {
+    background-color: #F6FFF8;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+}
+
+.container-detail .h1detail {
+    font-weight: bolder;
+    color: #6B9080;
+    padding: 3%;
+    padding-top: 8%;
+}
+
+.container-detail .row .deskripsi-detail {
+    text-align: left;
+    padding: 40px;
+}
+
+.deskripsi-detail h5,
+.deskripsi-detail h1 {
+    color: #6B9080;
+}
+
+.deskripsi-detail h4 {
+    width: 85%;
+    background-color: #CCE3DE;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.deskripsi-img {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    width: 300px;
+    height: 300px;
+}
+
+.col h4{
+    color: #063a23;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .container-detail .h1detail {
+        font-weight: bolder;
+        color: #6B9080;
+        padding: 2%;
+        padding-top: 14%;
+    }
+
+    .image {
+        margin-top: 0;
+    }
+    
+    #itemImage{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+}
+@media (max-width: 961px) {
+   
+#itemImage{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+
+
+}
 
 
 /* ---------------------------------------------------
@@ -369,7 +470,7 @@ footer {
 
     .mobile-menu {
         margin-top: 0px;
-        border-bottom-right-radius: 10%;
+        border-bottom-right-radius: 30%;
     }
 
     .nav-links li {

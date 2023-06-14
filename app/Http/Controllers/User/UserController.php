@@ -80,7 +80,7 @@ class UserController extends Controller
     {
         Auth::guard('masyarakat')->logout();
 
-        return redirect()->back();
+        return redirect()->route('inpeban.index');
     }
 
     public function storeAduan(Request $request)
